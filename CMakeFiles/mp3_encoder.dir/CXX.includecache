@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/atish/dev/Proto/mp3_encoder/src/logger.h
+string.h
+-
+fstream
+-
+ctime
+-
+
+/home/atish/dev/Proto/mp3_encoder/src/main.cpp
+iostream
+-
+string.h
+-
+exception
+-
+stdlib.h
+-
+direct.h
+-
+unistd.h
+-
+dirent.h
+-
+logger.h
+/home/atish/dev/Proto/mp3_encoder/src/logger.h
+

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 --std=c++17 -Wall -flto  -flto -rdynamic CMakeFiles/mp3_encoder.dir/src/main.cpp.o  -o bin/mp3_encoder -Wl,-rpath,/usr/local/lib /usr/local/lib/libmp3lame.so -lstdc++fs -pthread 
