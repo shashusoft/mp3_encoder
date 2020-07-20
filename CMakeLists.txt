@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.1)
 project(mp3_encoder)
 
-set(sources src/main.cpp)
-set(headers )
+set(sources src/main.cpp src/wav.cpp src/logger.h)
+set(headers src/wav.h)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)

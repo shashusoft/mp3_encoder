@@ -6,29 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/atish/dev/Proto/mp3_encoder/src/logger.h
-string.h
+/home/atish/dev/Proto/mp3_encoder/src/wav.cpp
+wav.h
+/home/atish/dev/Proto/mp3_encoder/src/wav.h
+iostream
 -
 fstream
 -
-ctime
+lame/lame.h
 -
 
-/home/atish/dev/Proto/mp3_encoder/src/main.cpp
-iostream
+/home/atish/dev/Proto/mp3_encoder/src/wav.h
+vector
 -
-string.h
+cstdint
 -
-exception
+string
 -
-stdlib.h
--
-direct.h
--
-unistd.h
--
-dirent.h
--
-logger.h
-/home/atish/dev/Proto/mp3_encoder/src/logger.h
 

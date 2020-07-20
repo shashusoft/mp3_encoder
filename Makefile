@@ -150,6 +150,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/wav.o: src/wav.cpp.o
+
+.PHONY : src/wav.o
+
+# target to build an object file
+src/wav.cpp.o:
+	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/wav.cpp.o
+.PHONY : src/wav.cpp.o
+
+src/wav.i: src/wav.cpp.i
+
+.PHONY : src/wav.i
+
+# target to preprocess a source file
+src/wav.cpp.i:
+	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/wav.cpp.i
+.PHONY : src/wav.cpp.i
+
+src/wav.s: src/wav.cpp.s
+
+.PHONY : src/wav.s
+
+# target to generate assembly for a file
+src/wav.cpp.s:
+	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/wav.cpp.s
+.PHONY : src/wav.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/wav.o"
+	@echo "... src/wav.i"
+	@echo "... src/wav.s"
 .PHONY : help
 
 

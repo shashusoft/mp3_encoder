@@ -16,7 +16,7 @@ class Logger
 public:
     Logger(const std::string& a_fileName)
     {
-        m_file.open(a_fileName, std::ofstream::out | std::ofstream::app);
+        m_file.open(a_fileName, std::ofstream::out | std::ofstream::trunc);
         if (!m_file)      
         {
             std::cout << ":File could not be created " << std::endl;

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/atish/dev/Proto/mp3_encoder/src/main.cpp" "/home/atish/dev/Proto/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/main.cpp.o"
+  "/home/atish/dev/Proto/mp3_encoder/src/wav.cpp" "/home/atish/dev/Proto/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/wav.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

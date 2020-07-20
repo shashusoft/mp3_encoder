@@ -10,8 +10,10 @@
 #define GetCurrentDir getcwd
 #endif
 #include <dirent.h>
-#include "logger.h"
+#include<vector>
 
+#include "logger.h"
+#include "wav.h"
 
 struct CommandArguments
 {
@@ -20,23 +22,6 @@ struct CommandArguments
     const char* m_bin       = "/bin";
     const char* m_extSlash  = "/bin/";
     const char*  m_exactFile = "wav";
-};
-
-struct WaveHeader
-{
-    char     riff[4];
-    uint32_t riffSize;
-    char     wave[4];
-    char     fmt[4];
-    uint32_t fmtSize;
-    uint16_t audioFormat;
-    uint16_t numberOfChannels;
-    uint32_t samplesPerSecond;
-    uint32_t bytesPerSecond;
-    uint16_t blockAlignment;
-    uint16_t bitsPerSample;
-    char     data[4];
-    uint32_t dataSize;
 };
 
 std::string getCurrentDirectory() {
@@ -55,6 +40,9 @@ int main(int argc, char* argv[])
     int wavFileCounter        = 0;
     bool isExactWavFilePath   = false;
     Logger logger("log.txt");
+    std::vector<std::string> waveFileContainer;
+    WAVHandler wavehandler;
+
     CommandArguments cmdArg;
     try
     {
@@ -125,6 +113,7 @@ int main(int argc, char* argv[])
                         if(fileName.substr(fileName.find_last_of(".") + 1) == "wav") 
                         {
                             std::cout << "WAV file found -> " << fileName << std::endl;
+                            waveFileContainer.push_back(fileName);
                             wavFileCounter++;
                         } 
                         else 
@@ -144,6 +133,8 @@ int main(int argc, char* argv[])
             else
             {
                 std::cout << ":Number of WAV files -> " <<  wavFileCounter << std::endl;
+                std::cout << "-----" << std::endl;
+                wavehandler.readWavFile(waveFileContainer);
             }
         }
     }

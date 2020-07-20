@@ -3,4 +3,8 @@
 
 CMakeFiles/mp3_encoder.dir/src/main.cpp.o: src/logger.h
 CMakeFiles/mp3_encoder.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/mp3_encoder.dir/src/main.cpp.o: src/wav.h
+
+CMakeFiles/mp3_encoder.dir/src/wav.cpp.o: src/wav.cpp
+CMakeFiles/mp3_encoder.dir/src/wav.cpp.o: src/wav.h
 
