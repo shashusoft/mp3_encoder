@@ -5,6 +5,14 @@
 #include <cstdint>
 #include <string>
 
+#include <lame/lame.h>
+
+enum Channel
+{
+    Mono = 1,
+    Stereo = 2
+};
+
 struct WaveHeader
 {
     char     ChunkID[4];          // Contains the letters "RIFF" in ASCII form
@@ -27,10 +35,11 @@ class WAVHandler
 public:
     WAVHandler();
     virtual ~WAVHandler();
-    void readWavFile(std::vector<std::string>& a_wavFileContainer);  
-    bool convertToMPThree(const std::string& input);
-    bool convertToMPThree_p(const std::string& input);
+    void wavFileCollection(std::vector<std::string>& a_wavFileContainer);
+    void readAndConvert(const std::string& a_file);
 
+    std::vector<unsigned char> convertToMPThreeMono(lame_global_flags* globalSettings, std::vector<short> input);
+    std::vector<unsigned char> convertToMPThreeStereo(lame_global_flags* globalSettings, std::vector<short> input);
 private:
     WaveHeader waveHeader;
 };

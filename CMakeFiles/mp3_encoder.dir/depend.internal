@@ -4,6 +4,10 @@
 CMakeFiles/mp3_encoder.dir/src/main.cpp.o
  /home/atish/dev/Proto/mp3_encoder/src/logger.h
  /home/atish/dev/Proto/mp3_encoder/src/main.cpp
+ /home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
+CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o
+ /home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp
+ /home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
  /home/atish/dev/Proto/mp3_encoder/src/wav.h
 CMakeFiles/mp3_encoder.dir/src/wav.cpp.o
  /home/atish/dev/Proto/mp3_encoder/src/wav.cpp

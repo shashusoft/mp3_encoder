@@ -6,14 +6,24 @@
 
 #IncludeRegexTransform: 
 
-/home/atish/dev/Proto/mp3_encoder/src/wav.cpp
-wav.h
-/home/atish/dev/Proto/mp3_encoder/src/wav.h
+/home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp
+thread_handler.h
+/home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
+windows.h
+-
+unistd.h
+-
+pthread.h
+-
 iostream
 -
-fstream
+wav.h
+/home/atish/dev/Proto/mp3_encoder/src/wav.h
+
+/home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
+vector
 -
-lame/lame.h
+string
 -
 
 /home/atish/dev/Proto/mp3_encoder/src/wav.h
@@ -22,5 +32,7 @@ vector
 cstdint
 -
 string
+-
+lame/lame.h
 -
 

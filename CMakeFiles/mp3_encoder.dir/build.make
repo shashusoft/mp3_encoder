@@ -60,43 +60,58 @@ include CMakeFiles/mp3_encoder.dir/flags.make
 CMakeFiles/mp3_encoder.dir/src/main.cpp.o: CMakeFiles/mp3_encoder.dir/flags.make
 CMakeFiles/mp3_encoder.dir/src/main.cpp.o: src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atish/dev/Proto/mp3_encoder/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mp3_encoder.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mp3_encoder.dir/src/main.cpp.o -c /home/atish/dev/Proto/mp3_encoder/src/main.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mp3_encoder.dir/src/main.cpp.o -c /home/atish/dev/Proto/mp3_encoder/src/main.cpp
 
 CMakeFiles/mp3_encoder.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mp3_encoder.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atish/dev/Proto/mp3_encoder/src/main.cpp > CMakeFiles/mp3_encoder.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atish/dev/Proto/mp3_encoder/src/main.cpp > CMakeFiles/mp3_encoder.dir/src/main.cpp.i
 
 CMakeFiles/mp3_encoder.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mp3_encoder.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atish/dev/Proto/mp3_encoder/src/main.cpp -o CMakeFiles/mp3_encoder.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atish/dev/Proto/mp3_encoder/src/main.cpp -o CMakeFiles/mp3_encoder.dir/src/main.cpp.s
 
 CMakeFiles/mp3_encoder.dir/src/wav.cpp.o: CMakeFiles/mp3_encoder.dir/flags.make
 CMakeFiles/mp3_encoder.dir/src/wav.cpp.o: src/wav.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atish/dev/Proto/mp3_encoder/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mp3_encoder.dir/src/wav.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mp3_encoder.dir/src/wav.cpp.o -c /home/atish/dev/Proto/mp3_encoder/src/wav.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mp3_encoder.dir/src/wav.cpp.o -c /home/atish/dev/Proto/mp3_encoder/src/wav.cpp
 
 CMakeFiles/mp3_encoder.dir/src/wav.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mp3_encoder.dir/src/wav.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atish/dev/Proto/mp3_encoder/src/wav.cpp > CMakeFiles/mp3_encoder.dir/src/wav.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atish/dev/Proto/mp3_encoder/src/wav.cpp > CMakeFiles/mp3_encoder.dir/src/wav.cpp.i
 
 CMakeFiles/mp3_encoder.dir/src/wav.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mp3_encoder.dir/src/wav.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atish/dev/Proto/mp3_encoder/src/wav.cpp -o CMakeFiles/mp3_encoder.dir/src/wav.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atish/dev/Proto/mp3_encoder/src/wav.cpp -o CMakeFiles/mp3_encoder.dir/src/wav.cpp.s
+
+CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o: CMakeFiles/mp3_encoder.dir/flags.make
+CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o: src/thread_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atish/dev/Proto/mp3_encoder/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o -c /home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp
+
+CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp > CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.i
+
+CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp -o CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.s
 
 # Object files for target mp3_encoder
 mp3_encoder_OBJECTS = \
 "CMakeFiles/mp3_encoder.dir/src/main.cpp.o" \
-"CMakeFiles/mp3_encoder.dir/src/wav.cpp.o"
+"CMakeFiles/mp3_encoder.dir/src/wav.cpp.o" \
+"CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o"
 
 # External object files for target mp3_encoder
 mp3_encoder_EXTERNAL_OBJECTS =
 
 bin/mp3_encoder: CMakeFiles/mp3_encoder.dir/src/main.cpp.o
 bin/mp3_encoder: CMakeFiles/mp3_encoder.dir/src/wav.cpp.o
+bin/mp3_encoder: CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o
 bin/mp3_encoder: CMakeFiles/mp3_encoder.dir/build.make
 bin/mp3_encoder: /usr/local/lib/libmp3lame.so
 bin/mp3_encoder: CMakeFiles/mp3_encoder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/atish/dev/Proto/mp3_encoder/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/mp3_encoder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/atish/dev/Proto/mp3_encoder/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/mp3_encoder"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mp3_encoder.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

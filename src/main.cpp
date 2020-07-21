@@ -12,8 +12,10 @@
 #include <dirent.h>
 #include<vector>
 
+#include "thread_handler.h"
+#include <thread>
+
 #include "logger.h"
-#include "wav.h"
 
 struct CommandArguments
 {
@@ -23,6 +25,14 @@ struct CommandArguments
     const char* m_extSlash  = "/bin/";
     const char*  m_exactFile = "wav";
 };
+
+template<class First, class Function>
+void parallelFun(First threadCount, Function f)
+{
+    std::thread thread[threadCount];
+    thread = std::thread(f);
+    thread.join();
+}
 
 std::string getCurrentDirectory() {
    char buff[FILENAME_MAX]; 
@@ -40,9 +50,7 @@ int main(int argc, char* argv[])
     int wavFileCounter        = 0;
     bool isExactWavFilePath   = false;
     Logger logger("log.txt");
-    std::vector<std::string> waveFileContainer;
-    WAVHandler wavehandler;
-
+    std::vector<std::string> waveContainer;
     CommandArguments cmdArg;
     try
     {
@@ -113,7 +121,7 @@ int main(int argc, char* argv[])
                         if(fileName.substr(fileName.find_last_of(".") + 1) == "wav") 
                         {
                             std::cout << "WAV file found -> " << fileName << std::endl;
-                            waveFileContainer.push_back(fileName);
+                            waveContainer.push_back(fileName);
                             wavFileCounter++;
                         } 
                         else 
@@ -134,7 +142,8 @@ int main(int argc, char* argv[])
             {
                 std::cout << ":Number of WAV files -> " <<  wavFileCounter << std::endl;
                 std::cout << "-----" << std::endl;
-                wavehandler.readWavFile(waveFileContainer);
+
+                ThreadHandler threadHandler(waveContainer);
             }
         }
     }

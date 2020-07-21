@@ -150,6 +150,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/thread_handler.o: src/thread_handler.cpp.o
+
+.PHONY : src/thread_handler.o
+
+# target to build an object file
+src/thread_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o
+.PHONY : src/thread_handler.cpp.o
+
+src/thread_handler.i: src/thread_handler.cpp.i
+
+.PHONY : src/thread_handler.i
+
+# target to preprocess a source file
+src/thread_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.i
+.PHONY : src/thread_handler.cpp.i
+
+src/thread_handler.s: src/thread_handler.cpp.s
+
+.PHONY : src/thread_handler.s
+
+# target to generate assembly for a file
+src/thread_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/mp3_encoder.dir/build.make CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.s
+.PHONY : src/thread_handler.cpp.s
+
 src/wav.o: src/wav.cpp.o
 
 .PHONY : src/wav.o
@@ -189,6 +216,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/thread_handler.o"
+	@echo "... src/thread_handler.i"
+	@echo "... src/thread_handler.s"
 	@echo "... src/wav.o"
 	@echo "... src/wav.i"
 	@echo "... src/wav.s"
