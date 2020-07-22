@@ -6,6 +6,38 @@
 
 #IncludeRegexTransform: 
 
+/home/atish/dev/Proto/mp3_encoder/src/logger.h
+string.h
+-
+fstream
+-
+ctime
+-
+
+/home/atish/dev/Proto/mp3_encoder/src/main.cpp
+iostream
+-
+string.h
+-
+exception
+-
+stdlib.h
+-
+direct.h
+-
+unistd.h
+-
+dirent.h
+-
+vector
+-
+thread_handler.h
+/home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
+thread
+-
+logger.h
+/home/atish/dev/Proto/mp3_encoder/src/logger.h
+
 /home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp
 thread_handler.h
 /home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
@@ -24,6 +56,16 @@ wav.h
 vector
 -
 string
+-
+
+/home/atish/dev/Proto/mp3_encoder/src/wav.cpp
+wav.h
+/home/atish/dev/Proto/mp3_encoder/src/wav.h
+iostream
+-
+fstream
+-
+memory
 -
 
 /home/atish/dev/Proto/mp3_encoder/src/wav.h
