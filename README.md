@@ -32,17 +32,28 @@ Requirements:
 
 
 Build and Run:
+
 Windows
+
 ------------
+
 configure and generate makefile using CMake GUI (CMake 3.18.0)
+
 mingw32-make
+
 cd bin
+
 ./mp3_encoder .
 
+
 Linux
+
 ------------
+
 cmake .
+
 make
 
 cd bin
+
 ./mp3_encoder .
