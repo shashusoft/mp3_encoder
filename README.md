@@ -5,6 +5,7 @@ Date: 21.07.2020
 Contact: patangeatish@simple-robot.de
 ********************
 
+wav file source: https://www2.cs.uic.edu/~i101/SoundFiles/
 TASK
 
 Write a C/C++ commandline application that encodes a set of WAV files to MP3
@@ -28,3 +29,20 @@ Requirements:
 (8) frameworks such as Boost or Qt shall not be used
 
 (9) the LAME encoder should be used with reasonable standard settings (e.g. quality based encoding with quality level "good")
+
+
+Build and Run:
+Windows
+------------
+configure and generate makefile using CMake GUI (CMake 3.18.0)
+mingw32-make
+cd bin
+./mp3_encoder .
+
+Linux
+------------
+cmake .
+make
+
+cd bin
+./mp3_encoder .
