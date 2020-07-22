@@ -1,4 +1,4 @@
-# Install script for directory: C:/dev/win_mp3
+# Install script for directory: C:/dev/mp3_encoder
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/dev/win_mp3/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/dev/mp3_encoder/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
