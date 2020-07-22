@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -76,5 +76,13 @@ cstdint
 string
 -
 lame/lame.h
+-
+
+include/lame/lame.h
+stddef.h
+-
+stdarg.h
+-
+stdio.h
 -
 

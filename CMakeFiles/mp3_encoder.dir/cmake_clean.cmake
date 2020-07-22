@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o"
   "CMakeFiles/mp3_encoder.dir/src/main.cpp.o"
   "CMakeFiles/mp3_encoder.dir/src/wav.cpp.o"
-  "CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o"
   "bin/mp3_encoder.pdb"
   "bin/mp3_encoder"
 )

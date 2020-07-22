@@ -1,1 +1,1 @@
-/usr/bin/c++   -O2 --std=c++17 -Wall -flto  -flto -rdynamic CMakeFiles/mp3_encoder.dir/src/main.cpp.o CMakeFiles/mp3_encoder.dir/src/wav.cpp.o CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o  -o bin/mp3_encoder lib/libmp3lame.a -lstdc++fs -pthread 
+/usr/bin/c++    -O2 --std=c++17 -Wall -flto  -flto CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o CMakeFiles/mp3_encoder.dir/src/main.cpp.o CMakeFiles/mp3_encoder.dir/src/wav.cpp.o  -o bin/mp3_encoder -rdynamic lib/libmp3lame.a -lstdc++fs -pthread 
