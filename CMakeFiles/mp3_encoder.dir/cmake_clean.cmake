@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o"
-  "CMakeFiles/mp3_encoder.dir/src/main.cpp.o"
-  "CMakeFiles/mp3_encoder.dir/src/wav.cpp.o"
+  "CMakeFiles/mp3_encoder.dir/src/main.cpp.obj"
+  "CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.obj"
+  "CMakeFiles/mp3_encoder.dir/src/wav.cpp.obj"
+  "bin/mp3_encoder.exe"
+  "bin/mp3_encoder.exe.manifest"
   "bin/mp3_encoder.pdb"
-  "bin/mp3_encoder"
+  "libmp3_encoder.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,15 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/atish/dev/Proto/mp3_encoder/src/main.cpp" "/home/atish/dev/Proto/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/main.cpp.o"
-  "/home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp" "/home/atish/dev/Proto/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o"
-  "/home/atish/dev/Proto/mp3_encoder/src/wav.cpp" "/home/atish/dev/Proto/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/wav.cpp.o"
+  "C:/dev/mp3_encoder/src/main.cpp" "C:/dev/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/main.cpp.obj"
+  "C:/dev/mp3_encoder/src/thread_handler.cpp" "C:/dev/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.obj"
+  "C:/dev/mp3_encoder/src/wav.cpp" "C:/dev/mp3_encoder/CMakeFiles/mp3_encoder.dir/src/wav.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "include"
+  "lame-3.99.5/src/lame-build/include"
+  "pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include"
   )
 
 # Targets to which this target links.

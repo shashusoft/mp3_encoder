@@ -5,7 +5,7 @@
 #else
 #include <unistd.h>
 #endif
-
+#define HAVE_STRUCT_TIMESPEC
 #include <pthread.h>
 #include <iostream>
 
@@ -40,7 +40,6 @@ ThreadHandler::ThreadHandler(std::vector<std::string> &a_container)
         printf("\n mutex init has failed\n");
     }
     int supThread         = supportedThreadCount();
-    int leftFileToProcess = 0;
     m_waveHandler = new WAVHandler;
     if (supThread < (int)m_waveContainer.size())
     {
@@ -83,5 +82,6 @@ void *ThreadHandler::newThread(void *a_value)
     std::cout << ThreadHandler::glCountr << std::endl;
     ThreadHandler::glCountr--;
     pthread_mutex_unlock(&lock);
+    return NULL;
 }
 

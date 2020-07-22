@@ -15,9 +15,6 @@ public:
     int supportedThreadCount();
     void setRemainingFile(const int &a_value);
 
-
-
-
     static void* newThread(void *a_value);
 public:
     std::vector<std::string> m_waveContainer;

@@ -1,3 +1,5 @@
-/home/atish/dev/Proto/mp3_encoder/CMakeFiles/edit_cache.dir
-/home/atish/dev/Proto/mp3_encoder/CMakeFiles/mp3_encoder.dir
-/home/atish/dev/Proto/mp3_encoder/CMakeFiles/rebuild_cache.dir
+C:/dev/mp3_encoder/CMakeFiles/pthreads-win32-build.dir
+C:/dev/mp3_encoder/CMakeFiles/lame-build.dir
+C:/dev/mp3_encoder/CMakeFiles/mp3_encoder.dir
+C:/dev/mp3_encoder/CMakeFiles/edit_cache.dir
+C:/dev/mp3_encoder/CMakeFiles/rebuild_cache.dir

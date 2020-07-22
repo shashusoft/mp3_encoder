@@ -13,7 +13,6 @@
 #include<vector>
 
 #include "thread_handler.h"
-#include <thread>
 
 #include "logger.h"
 
@@ -25,14 +24,6 @@ struct CommandArguments
     const char* m_extSlash  = "/bin/";
     const char*  m_exactFile = "wav";
 };
-
-template<class First, class Function>
-void parallelFun(First threadCount, Function f)
-{
-    std::thread thread[threadCount];
-    thread = std::thread(f);
-    thread.join();
-}
 
 std::string getCurrentDirectory() {
    char buff[FILENAME_MAX]; 

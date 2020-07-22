@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/atish/dev/Proto/mp3_encoder/src/logger.h
+C:/dev/mp3_encoder/src/logger.h
 string.h
 -
 fstream
@@ -14,7 +14,7 @@ fstream
 ctime
 -
 
-/home/atish/dev/Proto/mp3_encoder/src/main.cpp
+C:/dev/mp3_encoder/src/main.cpp
 iostream
 -
 string.h
@@ -32,15 +32,13 @@ dirent.h
 vector
 -
 thread_handler.h
-/home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
-thread
--
+C:/dev/mp3_encoder/src/thread_handler.h
 logger.h
-/home/atish/dev/Proto/mp3_encoder/src/logger.h
+C:/dev/mp3_encoder/src/logger.h
 
-/home/atish/dev/Proto/mp3_encoder/src/thread_handler.cpp
+C:/dev/mp3_encoder/src/thread_handler.cpp
 thread_handler.h
-/home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
+C:/dev/mp3_encoder/src/thread_handler.h
 windows.h
 -
 unistd.h
@@ -50,17 +48,17 @@ pthread.h
 iostream
 -
 wav.h
-/home/atish/dev/Proto/mp3_encoder/src/wav.h
+C:/dev/mp3_encoder/src/wav.h
 
-/home/atish/dev/Proto/mp3_encoder/src/thread_handler.h
+C:/dev/mp3_encoder/src/thread_handler.h
 vector
 -
 string
 -
 
-/home/atish/dev/Proto/mp3_encoder/src/wav.cpp
+C:/dev/mp3_encoder/src/wav.cpp
 wav.h
-/home/atish/dev/Proto/mp3_encoder/src/wav.h
+C:/dev/mp3_encoder/src/wav.h
 iostream
 -
 fstream
@@ -68,7 +66,7 @@ fstream
 memory
 -
 
-/home/atish/dev/Proto/mp3_encoder/src/wav.h
+C:/dev/mp3_encoder/src/wav.h
 vector
 -
 cstdint
@@ -84,5 +82,35 @@ stddef.h
 stdarg.h
 -
 stdio.h
+-
+
+pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include/pthread.h
+windows.h
+-
+config.h
+pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include/config.h
+time.h
+-
+signal.h
+-
+limits.h
+-
+need_errno.h
+pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include/need_errno.h
+errno.h
+-
+sched.h
+-
+sys/types.h
+-
+
+pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include/sched.h
+need_errno.h
+pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include/need_errno.h
+errno.h
+-
+sys/types.h
+-
+time.h
 -
 

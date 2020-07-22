@@ -1,1 +1,3 @@
-/usr/bin/c++    -O2 --std=c++17 -Wall -flto  -flto CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.o CMakeFiles/mp3_encoder.dir/src/main.cpp.o CMakeFiles/mp3_encoder.dir/src/wav.cpp.o  -o bin/mp3_encoder -rdynamic lib/libmp3lame.a -lstdc++fs -pthread 
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\mp3_encoder.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\mp3_encoder.dir/objects.a @CMakeFiles\mp3_encoder.dir\objects1.rsp
+C:\MinGW\bin\g++.exe  -O2 --std=c++17 -Wall -flto -std=c++1z -Wall -Wextra -flto -Wl,--whole-archive CMakeFiles\mp3_encoder.dir/objects.a -Wl,--no-whole-archive -o bin\mp3_encoder.exe -Wl,--out-implib,libmp3_encoder.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\mp3_encoder.dir\linklibs.rsp
