@@ -12,7 +12,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "include"
   "lame-3.99.5/src/lame-build/include"
   "pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include"
   )

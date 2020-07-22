@@ -129,19 +129,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pthreads-win32-build
-
-# Build rule for target.
-pthreads-win32-build: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pthreads-win32-build
-.PHONY : pthreads-win32-build
-
-# fast build rule for target.
-pthreads-win32-build/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/build
-.PHONY : pthreads-win32-build/fast
-
-#=============================================================================
 # Target rules for targets named lame-build
 
 # Build rule for target.
@@ -153,6 +140,19 @@ lame-build: cmake_check_build_system
 lame-build/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lame-build.dir\build.make CMakeFiles/lame-build.dir/build
 .PHONY : lame-build/fast
+
+#=============================================================================
+# Target rules for targets named pthreads-win32-build
+
+# Build rule for target.
+pthreads-win32-build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pthreads-win32-build
+.PHONY : pthreads-win32-build
+
+# fast build rule for target.
+pthreads-win32-build/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/build
+.PHONY : pthreads-win32-build/fast
 
 #=============================================================================
 # Target rules for targets named mp3_encoder

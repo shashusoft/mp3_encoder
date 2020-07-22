@@ -71,8 +71,8 @@ CMAKE_BINARY_DIR = C:\dev\mp3_encoder
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/pthreads-win32-build.dir/all
 all: CMakeFiles/lame-build.dir/all
+all: CMakeFiles/pthreads-win32-build.dir/all
 all: CMakeFiles/mp3_encoder.dir/all
 
 .PHONY : all
@@ -83,38 +83,11 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/pthreads-win32-build.dir/clean
 clean: CMakeFiles/lame-build.dir/clean
+clean: CMakeFiles/pthreads-win32-build.dir/clean
 clean: CMakeFiles/mp3_encoder.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/pthreads-win32-build.dir
-
-# All Build rule for target.
-CMakeFiles/pthreads-win32-build.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\mp3_encoder\CMakeFiles --progress-num=13,14,15,16,17,18,19,20 "Built target pthreads-win32-build"
-.PHONY : CMakeFiles/pthreads-win32-build.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/pthreads-win32-build.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\mp3_encoder\CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pthreads-win32-build.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\mp3_encoder\CMakeFiles 0
-.PHONY : CMakeFiles/pthreads-win32-build.dir/rule
-
-# Convenience name for target.
-pthreads-win32-build: CMakeFiles/pthreads-win32-build.dir/rule
-
-.PHONY : pthreads-win32-build
-
-# clean rule for target.
-CMakeFiles/pthreads-win32-build.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/clean
-.PHONY : CMakeFiles/pthreads-win32-build.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/lame-build.dir
@@ -142,6 +115,33 @@ lame-build: CMakeFiles/lame-build.dir/rule
 CMakeFiles/lame-build.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lame-build.dir\build.make CMakeFiles/lame-build.dir/clean
 .PHONY : CMakeFiles/lame-build.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pthreads-win32-build.dir
+
+# All Build rule for target.
+CMakeFiles/pthreads-win32-build.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\dev\mp3_encoder\CMakeFiles --progress-num=13,14,15,16,17,18,19,20 "Built target pthreads-win32-build"
+.PHONY : CMakeFiles/pthreads-win32-build.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pthreads-win32-build.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\mp3_encoder\CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pthreads-win32-build.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\mp3_encoder\CMakeFiles 0
+.PHONY : CMakeFiles/pthreads-win32-build.dir/rule
+
+# Convenience name for target.
+pthreads-win32-build: CMakeFiles/pthreads-win32-build.dir/rule
+
+.PHONY : pthreads-win32-build
+
+# clean rule for target.
+CMakeFiles/pthreads-win32-build.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pthreads-win32-build.dir\build.make CMakeFiles/pthreads-win32-build.dir/clean
+.PHONY : CMakeFiles/pthreads-win32-build.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mp3_encoder.dir

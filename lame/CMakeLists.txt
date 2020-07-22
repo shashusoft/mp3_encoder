@@ -1,9 +1,7 @@
-cmake_minimum_required (VERSION 3.0)
-project(LAME_LIBRARIES )
-
+cmake_minimum_required (VERSION 3.1)
+project(lame)
 file(GLOB_RECURSE libmp3lame "libmp3lame/*.c")
 file(GLOB_RECURSE mpglib "mpglib/*.c")
-  
 add_library(libmp3lame-static STATIC ${libmp3lame} ${mpglib})
 target_include_directories(libmp3lame-static PUBLIC "include")
 target_include_directories(libmp3lame-static PRIVATE "libmp3lame")

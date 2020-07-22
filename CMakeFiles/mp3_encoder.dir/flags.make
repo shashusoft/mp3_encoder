@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/mp3_encoder.dir/includes_CXX.rsp
 
-CXX_FLAGS =  -O2 --std=c++17 -Wall -flto -std=c++1z -Wall -Wextra
+CXX_FLAGS =  -std=c++1z -Wall -Wextra
 

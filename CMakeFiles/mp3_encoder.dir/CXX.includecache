@@ -73,10 +73,10 @@ cstdint
 -
 string
 -
-lame/lame.h
+lame.h
 -
 
-include/lame/lame.h
+lame-3.99.5/src/lame-build/include/lame.h
 stddef.h
 -
 stdarg.h
