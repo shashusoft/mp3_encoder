@@ -9,10 +9,10 @@ CMakeFiles/mp3_encoder.dir/src/thread_handler.cpp.obj
  C:/dev/mp3_encoder/src/thread_handler.cpp
  C:/dev/mp3_encoder/src/thread_handler.h
  C:/dev/mp3_encoder/src/wav.h
- lame-3.99.5/src/lame-build/include/lame.h
+ include/lame/lame.h
  pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include/pthread.h
  pthreads-win32-2.9.1/src/pthreads-win32-build/Pre-built.2/include/sched.h
 CMakeFiles/mp3_encoder.dir/src/wav.cpp.obj
  C:/dev/mp3_encoder/src/wav.cpp
  C:/dev/mp3_encoder/src/wav.h
- lame-3.99.5/src/lame-build/include/lame.h
+ include/lame/lame.h

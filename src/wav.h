@@ -5,7 +5,7 @@
 #include <cstdint>
 #include <string>
 
-#include <lame.h>
+#include <lame/lame.h>
 
 enum Channel
 {
