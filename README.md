@@ -33,6 +33,8 @@ Requirements:
 
 Build and Run:
 
+
+------------
 Windows
 
 ------------
@@ -45,6 +47,7 @@ cd bin
 
 ./mp3_encoder .
 
+------------
 
 Linux
 
