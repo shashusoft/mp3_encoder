@@ -40,9 +40,9 @@ public:
                << a_message 
                << std::endl;
     }
-
+    static void sRegisterInstance();
     static Logger* singleton();   
-    static bool exist();
+    static bool sExist();
 
 private:
     std::ofstream m_file;

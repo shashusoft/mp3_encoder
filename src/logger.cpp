@@ -19,17 +19,23 @@ Logger::~Logger()
         
 }
 
+void Logger::sRegisterInstance(Logger* a_instance)
+{
+    instance = a_instance;
+    isExist  = true;
+}
 Logger* Logger::singleton()
 {
-    if (!exist())
+    is (isExist)
     {
-        std::shared_ptr<Logger> logger(new Logger("txt"));
-        instance = logger.get();
+        return instance;
     }
-    return instance;
+    {
+        std::cout << "Nullpointer return in Logger " << std::endl;
+    }
 }   
 
-bool Logger::exist()
+bool Logger::sExist()
 {
     return isExist;
 }

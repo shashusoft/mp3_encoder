@@ -46,7 +46,8 @@ int main(int argc, char* argv[])
 {
     int wavFileCounter        = 0;
     bool isExactWavFilePath   = false;
-   
+    Logger logger("log.txt");
+    Logger::sRegisterInstance(logger);
     std::vector<std::string> waveContainer;
     CommandArguments cmdArg;
     try
