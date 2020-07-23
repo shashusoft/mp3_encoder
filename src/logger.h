@@ -40,7 +40,7 @@ public:
                << a_message 
                << std::endl;
     }
-    static void sRegisterInstance();
+    static void sRegisterInstance(Logger* a_instance);
     static Logger* singleton();   
     static bool sExist();
 
