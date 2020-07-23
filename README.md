@@ -6,9 +6,8 @@ Contact: patangeatish@simple-robot.de
 ********************
 
 wav file source: https://www2.cs.uic.edu/~i101/SoundFiles/
-TASK
 
-Write a C/C++ commandline application that encodes a set of WAV files to MP3
+TASK : Write a C/C++ commandline application that encodes a set of WAV files to MP3
 
 Requirements:
 
@@ -60,3 +59,13 @@ make
 cd bin
 
 ./mp3_encoder .
+
+------------
+
+Tested on
+
+------------
+
+Linux Mint, GNU 7.5.0, C++17
+Windows 10, CMake GUI 3.18, Mingw32-make, GCC, C++17 
+
