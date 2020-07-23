@@ -4,6 +4,7 @@
 #include <string.h>
 #include <fstream>
 #include <ctime>
+#include <iostream>
 
 enum MESSAGETYPE
 {
@@ -14,37 +15,22 @@ enum MESSAGETYPE
 class Logger
 {
 public:
-    Logger(const std::string& a_fileName)
-    {
-        m_file.open(a_fileName, std::ofstream::out | std::ofstream::trunc);
-        if (!m_file)      
-        {
-            std::cout << ":File could not be created " << std::endl;
-        }
-        else
-        {
-            m_file << "<version 1.0> " << std::endl;
-        }
-    }
-
-    virtual ~Logger()
-    {
-        
-    }
+    Logger(const std::string& a_fileName);
+    virtual ~Logger();
 
     template<MESSAGETYPE T>
-    void report(const std::string& a_message)    
+    void inline report(const std::string& a_message)    
     {
         std::string messageType = "";
         switch (T)
         {
             case ERROR:
                 messageType = "ERROR";
-                break;
+            break;
 
             case STATUS:
                 messageType = "STATUS";
-                break;
+            break;
         }
         std::time_t now = time(0);
         std::tm* localTime = std::localtime(&now);
@@ -53,9 +39,16 @@ public:
                << messageType << "::"
                << a_message 
                << std::endl;
-    }    
+    }
+
+    static Logger* singleton();   
+    static bool exist();
+
 private:
     std::ofstream m_file;
+    static Logger* instance;
+    static bool isExist;
 };
+
 
 #endif

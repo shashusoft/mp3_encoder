@@ -4,7 +4,7 @@
 #include <vector>
 #include <cstdint>
 #include <string>
-
+// lame library
 #include <lame.h>
 
 enum Channel
@@ -13,6 +13,7 @@ enum Channel
     Stereo = 2
 };
 
+// source : http://soundfile.sapp.org/doc/WaveFormat/
 struct WaveHeader
 {
     char     ChunkID[4];          // Contains the letters "RIFF" in ASCII form
@@ -41,7 +42,7 @@ public:
     std::vector<unsigned char> convertToMPThreeMono(lame_global_flags* globalSettings, std::vector<short> input);
     std::vector<unsigned char> convertToMPThreeStereo(lame_global_flags* globalSettings, std::vector<short> input);
 private:
-    WaveHeader waveHeader;
+    WaveHeader m_waveHeader;
 };
 
 #endif

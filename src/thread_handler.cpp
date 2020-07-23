@@ -1,5 +1,6 @@
 #include "thread_handler.h"
 
+// system
 #ifdef _WIN32
 #include <windows.h>
 #else
@@ -9,16 +10,22 @@
 #include <pthread.h>
 #include <iostream>
 
+// user
 #include "wav.h"
+#include "logger.h"
 
-int ThreadHandler::glCountr = 12;
+#define LOG Logger::singleton()
+
+int ThreadHandler::noOfWaveFile = 0;
 pthread_mutex_t lock;
 
 template<class Input, class Function, class Pointer>
-void parallelFun(Input count, Function f, Pointer pntr)
+void generateThreads(Input count, Function f, Pointer pntr)
 {
     pthread_t threadID[count];
+    int statusContainer[count] = {0};
     int joinCount = 0;
+    
     while (count > 0)
     {
         pthread_create(&threadID[count], NULL, f, pntr);
@@ -27,8 +34,16 @@ void parallelFun(Input count, Function f, Pointer pntr)
     }
     while(joinCount > 0)
     {
-        pthread_join(threadID[joinCount], nullptr);
+        statusContainer[joinCount] = pthread_join(threadID[joinCount], nullptr);
         joinCount--;
+    }
+    int threadCounter = 1;
+    for (auto i : statusContainer)
+    {
+        std::string status = "";
+        if(i == 0)  status = "finished"; else status = " has error";
+        std::cout << "Thread number " << threadCounter << " " << status <<  std::endl;
+        threadCounter++;
     }
 }
 
@@ -37,16 +52,19 @@ ThreadHandler::ThreadHandler(std::vector<std::string> &a_container)
 {
     if (pthread_mutex_init(&lock, NULL) != 0)
     {
-        printf("\n mutex init has failed\n");
+        LOG->report<ERROR>("Mutex init failed "); 
+        std::cout << "Mutex init has failed" << std::endl;
     }
-    int supThread         = supportedThreadCount();
+    int supThread = supportedThreadCount();
     m_waveHandler = new WAVHandler;
     if (supThread < (int)m_waveContainer.size())
     {
-        int rem = (int)m_waveContainer.size() - supThread;
+        int rem         = (int)m_waveContainer.size() - supThread;
         m_remainingFile = rem;
     }
-    parallelFun((int)m_waveContainer.size(), newThread, this);
+    std::cout << " m_waveContainer.size() " << m_waveContainer.size() << " supThread " << supThread;
+    ThreadHandler::noOfWaveFile = m_waveContainer.size() - 1;
+    generateThreads(m_waveContainer.size() - 1, newThread, this);
     pthread_mutex_destroy(&lock);
 }
 
@@ -75,12 +93,13 @@ void *ThreadHandler::newThread(void *a_value)
 {
     pthread_mutex_lock(&lock);
     auto pntr = reinterpret_cast<ThreadHandler*>(a_value);
-    if (ThreadHandler::glCountr > 0)
+    if (ThreadHandler::noOfWaveFile > 0)
     {
-        pntr->m_waveHandler->readAndConvert(pntr->m_waveContainer[ThreadHandler::glCountr]);
+        pntr->m_waveHandler->readAndConvert(pntr->m_waveContainer[ThreadHandler::noOfWaveFile]);
     }
-    std::cout << ThreadHandler::glCountr << std::endl;
-    ThreadHandler::glCountr--;
+    std::cout << "Thread Number -> " << ThreadHandler::noOfWaveFile << std::endl;
+    LOG->report<STATUS>("Thread started "); 
+    ThreadHandler::noOfWaveFile--;
     pthread_mutex_unlock(&lock);
     return NULL;
 }
