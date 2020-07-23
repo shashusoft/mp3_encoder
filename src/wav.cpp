@@ -50,11 +50,6 @@ std::vector<unsigned char> WAVHandler::convertToMPThreeStereo(lame_global_flags*
     return{ buffer.begin(), buffer.begin() + encoded_size };
 }
 
-void WAVHandler::wavFileCollection(std::vector<std::string>& a_wavFileContainer)
-{
-
-}
-
 void WAVHandler::readAndConvert(const std::string &a_file)
 {
     LOG->report<STATUS_MSG>("received file for read and convert ");

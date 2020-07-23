@@ -36,7 +36,6 @@ class WAVHandler
 public:
     WAVHandler();
     virtual ~WAVHandler();
-    void wavFileCollection(std::vector<std::string>& a_wavFileContainer);
     void readAndConvert(const std::string& a_file);
 
     std::vector<unsigned char> convertToMPThreeMono(lame_global_flags* globalSettings, std::vector<short> input);

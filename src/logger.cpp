@@ -33,6 +33,7 @@ Logger* Logger::singleton()
     }
     {
         std::cout << "Nullpointer return in Logger " << std::endl;
+        return nullptr;
     }
 }   
 
