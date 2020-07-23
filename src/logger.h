@@ -8,8 +8,8 @@
 
 enum MESSAGETYPE
 {
-    ERROR,
-    STATUS
+    ERROR_MSG,
+    STATUS_MSG
 };
 
 class Logger
@@ -24,11 +24,11 @@ public:
         std::string messageType = "";
         switch (T)
         {
-            case ERROR:
+            case ERROR_MSG:
                 messageType = "ERROR";
             break;
 
-            case STATUS:
+            case STATUS_MSG:
                 messageType = "STATUS";
             break;
         }

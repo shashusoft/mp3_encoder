@@ -52,7 +52,7 @@ ThreadHandler::ThreadHandler(std::vector<std::string> &a_container)
 {
     if (pthread_mutex_init(&lock, NULL) != 0)
     {
-        LOG->report<ERROR>("Mutex init failed "); 
+        LOG->report<ERROR_MSG>("Mutex init failed "); 
         std::cout << "Mutex init has failed" << std::endl;
     }
     int supThread = supportedThreadCount();
@@ -98,7 +98,7 @@ void *ThreadHandler::newThread(void *a_value)
         pntr->m_waveHandler->readAndConvert(pntr->m_waveContainer[ThreadHandler::noOfWaveFile]);
     }
     std::cout << "Thread Number -> " << ThreadHandler::noOfWaveFile << std::endl;
-    LOG->report<STATUS>("Thread started "); 
+    LOG->report<STATUS_MSG>("Thread started "); 
     ThreadHandler::noOfWaveFile--;
     pthread_mutex_unlock(&lock);
     return NULL;

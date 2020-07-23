@@ -31,12 +31,12 @@ std::string getCurrentDirectory() {
    char* ret = GetCurrentDir(buff, FILENAME_MAX );
    if (ret == NULL)
    {
-       LOG->report<ERROR>("Unable to open current directory "); 
+       LOG->report<ERROR_MSG>("Unable to open current directory "); 
        std::cout << ":Unable to open current directory" << std::endl;         
    }
    else
    {
-       LOG->report<STATUS>("Current directory opened");    
+       LOG->report<STATUS_MSG>("Current directory opened");    
    }
    std::string currentDirectory(buff);
    return currentDirectory;
@@ -58,7 +58,7 @@ int main(int argc, char* argv[])
             std::cout << ":Path to *.wav file missing "                 << std::endl;
             std::cout << ":Type ./mp3_encoder --help for further help " << std::endl;
             std::cout << "********************"                         << std::endl;
-            LOG->report<ERROR>("File name entered incorrectly");
+            LOG->report<ERROR_MSG>("File name entered incorrectly");
             std::cout << std::endl;
             exit(EXIT_FAILURE);
         }
@@ -131,14 +131,14 @@ int main(int argc, char* argv[])
             }
             if (wavFileCounter == 0)
             {
-                LOG->report<STATUS>("No wav file found");
+                LOG->report<STATUS_MSG>("No wav file found");
                 std::cout << ":No WAV file found. WAV files available at /bin/ "                                << std::endl;
                 std::cout << ":Exiting application, please try again with ./mp3_encoder <path to *.wav file> " << std::endl;
                 exit(EXIT_FAILURE);
             }
             else
             {
-                LOG->report<STATUS>("wav files found ");
+                LOG->report<STATUS_MSG>("wav files found ");
                 std::cout << ":Number of WAV files -> " <<  wavFileCounter << std::endl;
                 std::cout << "-----"                    << std::endl;
                 ThreadHandler threadHandler(waveContainer);
@@ -148,6 +148,6 @@ int main(int argc, char* argv[])
     catch(std::exception& e)
     {
         std::cout << e.what() << std::endl;
-        LOG->report<ERROR>("Exception occured ");
+        LOG->report<ERROR_MSG>("Exception occured ");
     }
 }

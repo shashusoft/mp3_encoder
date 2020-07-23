@@ -28,7 +28,7 @@ WAVHandler::~WAVHandler()
 
 std::vector<unsigned char> WAVHandler::convertToMPThreeMono(lame_global_flags* globalSettings, std::vector<short> input)
 {
-    LOG->report<STATUS>("Coverting wav mono to mp3 "); 
+    LOG->report<STATUS_MSG>("Coverting wav mono to mp3 "); 
     std::vector<unsigned char> buffer;
     buffer.resize(input.size() * 5 / 4 + 7200);
     int encoded_size = lame_encode_buffer(globalSettings, input.data(), input.data(), static_cast<int>(input.size()), buffer.data(), static_cast<int>(buffer.size()));
@@ -40,7 +40,7 @@ std::vector<unsigned char> WAVHandler::convertToMPThreeMono(lame_global_flags* g
 
 std::vector<unsigned char> WAVHandler::convertToMPThreeStereo(lame_global_flags* globalSettings, std::vector<short> input)
 {
-    LOG->report<STATUS>("Coverting wav stereo to mp3 ");
+    LOG->report<STATUS_MSG>("Coverting wav stereo to mp3 ");
     std::vector<unsigned char> buffer;
     buffer.resize(input.size() * 5 / 4 + 7200);
     int encoded_size = lame_encode_buffer_interleaved(globalSettings, input.data(), static_cast<int>(input.size() / 2), buffer.data(), static_cast<int>(buffer.size()));
@@ -57,7 +57,7 @@ void WAVHandler::wavFileCollection(std::vector<std::string>& a_wavFileContainer)
 
 void WAVHandler::readAndConvert(const std::string &a_file)
 {
-    LOG->report<STATUS>("received file for read and convert ");
+    LOG->report<STATUS_MSG>("received file for read and convert ");
     std::ifstream fh;
     fh.open(a_file, std::ios_base::binary);
     fh.read((char*)&m_waveHeader.ChunkID, sizeof(m_waveHeader.ChunkID));
