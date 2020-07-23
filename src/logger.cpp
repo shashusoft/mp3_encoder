@@ -24,9 +24,10 @@ void Logger::sRegisterInstance(Logger* a_instance)
     instance = a_instance;
     isExist  = true;
 }
+
 Logger* Logger::singleton()
 {
-    is (isExist)
+    if (isExist)
     {
         return instance;
     }
