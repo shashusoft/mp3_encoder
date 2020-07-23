@@ -67,5 +67,6 @@ Tested on
 ------------
 
 Linux Mint, GNU 7.5.0, C++17
-Windows 10, CMake GUI 3.18, Mingw32-make, GCC, C++17 
+
+Windows 10, CMake GUI 3.18, MinGW, GCC 9.2.0, C++17 
 
