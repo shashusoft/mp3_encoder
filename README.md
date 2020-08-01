@@ -1,5 +1,4 @@
 ********************
-Project: Cinemo Assignment
 Developer: Atish Patange
 Date: 21.07.2020
 Contact: patangeatish@simple-robot.de
